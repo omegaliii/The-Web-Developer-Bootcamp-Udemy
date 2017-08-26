@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+</head>
+<body>
+	<h1>Register</h1>
+
+	<form>
+		<div>
+			<label for="FirstName">First Name:</label>
+			<input id="FirstName" type="name" name="FirstName" placeholder="Omega" required>
+
+			<label for="LastName">Last Name:</label>
+			<input id="LastName" type="name" name="LastName" placeholder="Li" required>
+		</div>
+		
+
+		<div>
+			<label for="Male">Male</label>
+			<input id="Male" type="radio" name="geder" value="male">
+			<label for="Female">Female</label>
+			<input id="Feale" type="radio" name="geder" value="Female">
+			<label for="other">other</label>
+			<input id="other" type="radio" name="geder" value="other">
+		</div>
+			
+
+		<div>
+			<label for="Email">Email:</label>
+			<input id="Email" type="Email" name="Email" placeholder="your Email" required>
+			<label for="Password">Password:</label>
+			<input id="Password" type="Password" name="Password" placeholder="Password" pattern=".{5,10}"required title="5 to 10 characters">
+		</div>
+		
+
+		<div>
+			<label for="BithdayInfo">Bithday:</label>
+		<select id="BithdayInfo" name="BithdayMonth">
+			<option value="BithdayMonth">Month</option>
+			<option value="Jan">Jan</option>
+			<option value="Feb">Feb</option>
+			<option value="Mar">Mar</option>
+		</select>
+		<select id="BithdayInfo" name="BithdayDay">
+			<option value="BithdayDay">Day</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<select id="BithdayInfo" name="BithdayYear">
+			<option value="BithdayYear">Year</option>
+			<option value="1994">1994</option>
+			<option value="1995">1995</option>
+			<option value="1996">1996</option>
+		</select>
+		</div>
+		
+
+		<div>
+			<label for="agreement">I agree to the terms and conditions</label>
+			<input id="agreement" type="checkbox" name="agree">
+		</div>
+		
+		<div>
+			<input type="submit" name="submit">
+		</div>
+	</form>
+
+</body>
+</html>
