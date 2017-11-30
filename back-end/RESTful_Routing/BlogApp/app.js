@@ -22,20 +22,6 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model("Blog", blogSchema);
 
-// Blog.create({
-//     title: "test post", 
-//     image: "https://farm8.staticflickr.com/7107/7015613081_2b9e3b8906.jpg",
-//     body: "a cute dog"
-//     }, function(err,blog){
-//     if(err){
-//         console.log(err);
-//     }
-//     else{
-    
-//         console.log(blog)
-//     }
-// });
-
 //Routes
 app.get("/", function(req, res){
     res.redirect("/blogs");
